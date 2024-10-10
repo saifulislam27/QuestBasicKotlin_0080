@@ -6,7 +6,7 @@ fun ConditionalStatement() {
     val number = 10
     if (number > 0) {
         println("Positive Number")
-    } else {
+    }else {
         println("Negative Number")
     }
 
@@ -22,4 +22,13 @@ fun ConditionalStatement() {
         else -> println("Invalid Day")
     }
 
+    val value = "10"
+    try {
+        val result = value.toInt()
+        println("Result: $result")
+    } catch(e: NumberFormatException){
+        println("Invalid Number")
+    }
+
 }
+
